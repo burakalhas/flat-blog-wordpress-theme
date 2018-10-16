@@ -1,0 +1,257 @@
+/*
+Theme Name: B.ALHAS v.3
+Theme URI: http://www.burakalhas.com.tr
+Author: Burak ALHAS
+Version: 2.0
+Author URI: http://www.burakalhas.com.tr
+*/
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	0.	CSS RESET
+/*-----------------------------------------------------------------------------------*/
+html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,a,code,strong,b{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}a{text-decoration:none;color:#000}body{line-height:1}ul,ol{list-style:none}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	1.	WORDPRESS CORE
+/*-----------------------------------------------------------------------------------*/
+
+a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
+.wp-caption{background:#fff;border:1px solid #f0f0f0;max-width:96%;text-align:center;padding:5px 3px 10px}
+.wp-caption.alignright{margin:5px 0 20px 20px}
+.wp-caption img{border:0 none;height:auto;max-width:98.5%;width:auto;margin:0;padding:0}
+.wp-caption p.wp-caption-text{font-size:11px;line-height:17px;margin:0;padding:0 4px 5px}
+dl{margin:0 0 24px}
+dd{margin-bottom:18px}
+cite,em,i{font-style:italic}
+big{font-size:131.25%}
+ins{background:#ffc;text-decoration:none}
+blockquote{font-style:italic;border-left-style:solid;border-left-width:5px;border-left-color:#CCC;font-size:11px;background-color:#FBFBFB;margin:5px;padding:10px}
+blockquote cite,blockquote em,blockquote i{font-style:normal}
+pre{background:#f7f7f7;color:#222;line-height:21px;margin-bottom:18px;font-size:12px;padding:1.5em}
+abbr,acronym{border-bottom:1px dotted #666;cursor:help}
+sup,sub{height:0;line-height:1;position:relative;vertical-align:baseline}
+sup{bottom:1ex}
+sub{top:.5ex}
+img.size-auto,img.size-full,img.size-large,img.size-medium,.attachment img{max-width:100%;height:auto}
+.alignleft,img.alignleft{display:inline;float:left;margin-right:14px;margin-top:4px}
+.alignright,img.alignright .noalignment img.noalignment{display:inline;float:right;margin-left:14px;margin-top:4px}
+.aligncenter,img.aligncenter{clear:both;display:block;margin-left:auto;margin-right:auto}
+img.alignleft,img.alignright,img.aligncenter{margin-bottom:12px}
+.alignnone,a img.alignnone,.wp-caption.alignnone,.wp-caption.alignleft{margin:5px 20px 20px 0}
+.aligncenter,div.aligncenter,.aligncenter{display:block;margin:5px auto}
+.alignright,a img.alignright{float:right;margin:5px 0 20px 20px}
+.alignleft,a img.alignleft{float:left;margin:5px 20px 20px 0}
+dt,strong{font-weight:700}
+
+/*-----------------------------------------------------------------------------------*/
+/*	2.	FONT
+/*-----------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	3. BODY
+/*-----------------------------------------------------------------------------------*/
+
+body {background:#;width: 100%; height: 100%; font: 15px arial;margin:0;padding:0;font-family: 'Raleway', sans-serif;}
+ul{margin:0;padding:0}
+.orta{width:1000px;margin:0 auto}
+
+/*-----------------------------------------------------------------------------------*/
+/*	4. KOLAYLIKLAR
+/*-----------------------------------------------------------------------------------*/
+
+.orta{width:1000px;margin:0 auto}
+.sag{float:right}
+.sol{float:left;}
+.temizle{clear:both}
+::selection {color:#FFF;background:#34495e;}
+::-moz-selection {color:#FFF;background:#34495e;}
+::-webkit-scrollbar{width:10px;height:1px}
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment{display:none;}
+::-webkit-scrollbar-track-piece{background-color:#FFF}
+::-webkit-scrollbar-thumb{-webkit-border-radius:1px;background:#1abc97;}
+blockquote{font-family: 'Raleway', sans-serif;background:#34495e;border-left:10px solid #2c3e50;quotes:\201C\201D\2018\2019;margin:1.5em 10px;padding:1em 10px;color:#FFF}
+blockquote:before{color:#FFF;content:open-quote;font-size:4em;line-height:.1em;margin-right:.25em;vertical-align:-.4em}
+blockquote p{display:inline}
+pre{overflow:auto;color:#3f3b36;border:1px solid #e9e7e0;border-left:6px solid #eec04f;font:13px/20px 'Droid Sans', sans-serif;border-top-left-radius:4px;border-bottom-left-radius:4px;background:url(data:image/gif;base64,R0lGODlhAQAoAIAAAP////n38CH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGMjNCRjc2NTZCMUYxMUUxOUNENEUzMjYxM0JCQjhBMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGMjNCRjc2NjZCMUYxMUUxOUNENEUzMjYxM0JCQjhBMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkYyM0JGNzYzNkIxRjExRTE5Q0Q0RTMyNjEzQkJCOEExIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkYyM0JGNzY0NkIxRjExRTE5Q0Q0RTMyNjEzQkJCOEExIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAEAKAAAAgeMj5nA7f8KADs=) repeat scroll 0 -9px;margin:13px 0 13px 3px;padding:10px 8px 10px 12px}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	5. HEADER
+/*-----------------------------------------------------------------------------------*/
+
+header{width:100%;height:200px;background:#34495e;}
+.logo{margin-top:45px;background:url(images/logo.png) no-repeat;height:44px;width:361px;float:left}
+.bilgi{font-size:13px;color:#FFF;margin-top:55px;float:right;}
+nav{border-top-left-radius:2px;border-top-right-radius:2px;background:#1abc97;height:70px;width:1000px;margin:130px auto;position:absolute;z-index:2px;}
+nav ul{float:left;}
+nav ul li{list-style:none;float:left;}
+nav ul li a{padding:19px 20px;font-size:13px;color:#FFF;float:left;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+nav ul li a span{font-size:10px;float:right;color:#FFF;padding-top:20px;margin-left:-80px;padding-right:-9px;}
+nav ul li a:hover{background:#16a085;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+.search{float:right;background:url(images/search.png) #16a085 center no-repeat;padding:24.5px 20px;height:21px;width:22px;border:none;outline:none;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+.search:focus{width:170px;background:#16a085;color:#FFF;padding-right:10px;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+
+/*-----------------------------------------------------------------------------------*/
+/*	6. SOL
+/*-----------------------------------------------------------------------------------*/
+
+section{width:650px;height:250px;background:#FFF;margin-top:20px;border-radius:2px;box-shadow:0 0 1px #666}
+section .baslik a{color:#FFF;}
+section .baslik{width:630px;height:20px;color:#FFF;padding:10px;background:#34495e;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+section .onecikarilmis{float:left;width:445px;height:75px;border:2px solid #34495e;margin-left:10px;margin-top:15px;}
+section .onecikarilmis  img{width:445px;height:75px;}
+section .anasayfa p{float:left;line-height:19px;font-size:12px;width:445px;padding-top:10px;padding-bottom:10px;color:#393939;padding-left:10px;}
+section .ayrac{height:185px;width:1px;background:#34495e;float:left;margin-left:15px;margin-top:-80px}
+section .kutucuk{color:#FFF;padding:10px;height:16px;width:139px;background:#34495e;float:left;margin-top:-80px;margin-left:10px;margin-bottom:90px}
+section a.devami{padding:15px 10px;text-align:center;color:#FFF;height:18px;width:139px;background:#34495e;float:right;margin-top:-80px;margin-right:10px;margin-bottom:90px;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+section a.devami:hover{background:#1abc97;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+section .kutucuk span a{color:#FFF;float:left;margin-top:-15px;margin-left:25px}
+.yaziic{padding-bottom:10px;width:650px;margin-top:20px;box-shadow:0 0 1px #666}
+.yaziic p.tButon{margin-left:10px;float:left;color:#FFF;padding:10px 20px;background:#e67e22;border-radius:2px;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;margin-top:20px}
+.yaziic p.tButon:hover{background:#d35400;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+.yaziic p.mButon{margin-left:10px;float:left;color:#FFF;padding:10px 20px;background:#3498db;border-radius:2px;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;margin-top:20px}
+.yaziic p.mButon:hover{background:#2980b9;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+.yaziic p.yButon{margin-left:10px;float:left;color:#FFF;padding:10px 20px;background:#2ecc71;border-radius:2px;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;margin-top:20px}
+.yaziic p.yButon:hover{background:#27ae60;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+.yaziic p.kButon{margin-left:10px;float:left;color:#FFF;padding:10px 20px;background:#e74c3c;border-radius:2px;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;margin-top:20px}
+.yaziic p.kButon:hover{background:#c0392b;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+.yaziic p.tButon a,.yaziic p.yButon a,.yaziic p.mButon a,.yaziic p.kButon a{background:none;}
+.yaziic p{float:left;font-size:13px;line-height:21px;color:#34495e;padding:10px;}
+.yaziic h1{font-size:17px;background:#95a5a6;color:#FFF;margin:10px auto;padding:10px;clear:both;width:630px}
+.yaziic h2{font-size:15px;background:#95a5a6;color:#FFF;margin:10px auto;padding:10px;clear:both;width:630px}
+.yaziic h3{font-size:13px;background:#f0f0f0;padding-top:13px;padding-bottom:11px;padding-left:12px;color:#95a5a6;margin:10px auto;clear:both;width:630px}
+.yaziic h4{font-size:11px;background:#95a5a6;color:#FFF;margin:10px auto;padding:10px;clear:both;width:630px}
+.yaziic h1 a:hover,.yaziic h2 a:hover,.yaziic h3 a:hover,.yaziic h4 a:hover{color:#1abc97}
+.yaziic p a{padding:2px 4px;background:#95a5a6;color:#FFF;border-radius:2px}
+.yaziic img{margin-left:10px;border-radius:2px;max-width:630px;margin-top:10px;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+.yaziic img:hover{opacity:0.8;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+.yaziic .baslik a{color:#FFF;}
+.yaziic ol{color:#393939;}
+.yaziic li{list-style-type:square;margin-left:3px;line-height:25px;}
+.yaziic .baslik{width:630px;height:20px;color:#FFF;padding:10px;background:#95a5a6;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+.yazarkismi{background:#FFF;box-shadow:0 0 1px #666;margin-top:20px;width:650px;}
+.yazarkismi p{float:left;width:500px;padding:10px;font-size:14px;line-height:18.5px}
+.yazarkismi .yazaresim {float:left;margin:10px;width:100px;height:100px;border:3px solid #95a5a6;border-radius:2px}
+.yazarkismi .baslik a{font-weight:600;color:#FFF;}
+.yazarkismi .baslik{width:630px;height:18px;color:#FFF;padding:10px;background:#95a5a6;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+#yorumalani{margin-bottom:40px;clear:both;width:650px;background:#FFF;box-shadow:0 0 1px #666;margin-top:20px;padding-bottom:10px}
+#yorumalani .baslik a{font-weight:600;color:#FFF;}
+#yorumalani .baslik{width:630px;height:18px;color:#FFF;padding:10px;background:#95a5a6;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+.asagicek{margin-top:40px;}
+.tabs{position:relative;width:100%;margin-top:60px;}
+.tabs input{position:absolute;z-index:1000;width:30px;height:40px;left:0;top:0;opacity:0;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);filter:alpha(opacity=0);cursor:pointer}
+.tabs input#tab-2{top:40px}
+.tabs input#tab-3{top:80px}
+.tabs input#tab-4{top:120px}
+.tabs label{background:#34495e;font-size:13px;line-height:40px;position:relative;display:block;width:80px;color:#FFF;text-align:left;float:left;clear:both;margin-top:-80px;margin-bottom:80px;-webkit-transition:.3s ease-in-out;-moz-transition:.3s ease-in-out;transition:.3s ease-in-out;padding:0 20px}
+.tabs label:after{background:#1abc97;position:absolute;right:-2px;top:0;width:2px;color:#27ae60;-webkit-transition:.3s ease-in-out;-moz-transition:.3s ease-in-out;transition:.3s ease-in-out}
+.tabs input:hover + label{background:#1abc97;-webkit-transition:.3s ease-in-out;-moz-transition:.3s ease-in-out;transition:.3s ease-in-out}
+.tabs label:first-of-type{z-index:4}
+.tab-label-2{z-index:3}
+.tab-label-3{z-index:2}
+.tab-label-4{z-index:1}
+.tabs input:checked + label{background:#1abc97;z-index:6}
+.clear-shadow{clear:both}
+.content{background:#fff;position:relative;width:auto;height:118px;box-shadow:0 0 1px #666;margin:-199px 0 0 120px}
+.content img{border-radius:2px;height:78px;width:78px;margin-right:7px;border:2px solid #34495e;-webkit-transition:.3s ease-in-out;-moz-transition:.3s ease-in-out;transition:.3s ease-in-out}
+.content img:hover{border-radius:5px;border:2px solid #1abc97;-webkit-transition:.3s ease-in-out;-moz-transition:.3s ease-in-out;transition:.3s ease-in-out}
+.content div{position:absolute;top:0;z-index:1;opacity:0;-webkit-transition:all linear .5s;-moz-transition:all linear .5s;-o-transition:all linear .5s;-ms-transition:all linear .5s;transition:all linear .5s;-webkit-transform:translateY(-450px);-moz-transform:translateY(-450px);-o-transform:translateY(-450px);-ms-transform:translateY(-450px);transform:translateY(-450px);padding:20px}
+.tabs input.tab-selector-1:checked ~ .content .content-1,.tabs input.tab-selector-2:checked ~ .content .content-2,.tabs input.tab-selector-3:checked ~ .content .content-3,.tabs input.tab-selector-4:checked ~ .content .content-4{-webkit-transform:translateY(0px);-moz-transform:translateY(0px);-o-transform:translateY(0px);-ms-transform:translateY(0px);transform:translateY(0px);z-index:100;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);filter:alpha(opacity=100);opacity:1;-webkit-transition:all ease-out .3s .3s;-moz-transition:all ease-out .3s .3s;-o-transition:all ease-out .3s .3s;-ms-transition:all ease-out .3s .3s;transition:all ease-out .3s .3s}
+.content div h2,.content div h3{color:#34495e}
+.content div p{font-size:14px;line-height:22px;text-align:left;color:#777;padding-left:15px;margin:0}
+.sayfala { clear:both; padding:0; margin:-60px 0px 10px 0; float:right; line-height:10px; }
+
+.sayfala a {float:left; margin: 0 2px 0 0; padding:4px 11px 5px 11px; text-decoration:none;  width:auto;color:#FFF;border-radius: 3px; background-color:#34495e; font-size:10px;-webkit-transition:.3s ease-in-out;-moz-transition:.3s ease-in-out;transition:.3s ease-in-out}
+
+.sayfala a:hover { background-color:#1abc97;-webkit-transition:.3s ease-in-out;-moz-transition:.3s ease-in-out;transition:.3s ease-in-out}
+
+.sayfala span {float:left; margin: 0 2px 0 0; padding:4px 11px 5px 11px; text-decoration:none; width:auto;color:#FFF;border-radius: 3px;background-color:#34495e; font-size:10px;-webkit-transition:.3s ease-in-out;-moz-transition:.3s ease-in-out;transition:.3s ease-in-out}
+
+.sayfala span:hover {background-color:#1abc97;color:#FFF;-webkit-transition:.3s ease-in-out;-moz-transition:.3s ease-in-out;transition:.3s ease-in-out}
+
+.sayfala span.current {background-color:#16a085;color:#FFF;-webkit-transition:.3s ease-in-out;-moz-transition:.3s ease-in-out;transition:.3s ease-in-out}
+.tamsayfa{padding-bottom:10px;box-shadow:0 0 1px #666;width:100%;margin-top:20px}
+.tamsayfa .baslik a{color:#FFF;}
+.tamsayfa .baslik{width:980px;height:20px;color:#FFF;padding:10px;background:#34495e;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+.tamsayfa p{padding:10px;line-height:22px;font-size:14px;color:#34495e}
+.tamsayfa h1{font-size:17px;background:#95a5a6;color:#FFF;margin:10px auto;padding:10px;clear:both;width:970px}
+.tamsayfa h2{font-size:15px;background:#95a5a6;color:#FFF;margin:10px auto;padding:10px;clear:both;width:970px}
+.tamsayfa h3{font-size:13px;background:#f0f0f0;padding-top:13px;padding-bottom:11px;padding-left:12px;color:#95a5a6;margin:10px auto;clear:both;width:970px}
+.tamsayfa h4{font-size:11px;background:#95a5a6;color:#FFF;margin:10px auto;padding:10px;clear:both;width:970px}
+.tamsayfa h1 a:hover,.tamsayfa h2 a:hover,.tamsayfa h3 a:hover,.tamsayfa h4 a:hover{color:#1abc97}
+
+/*-----------------------------------------------------------------------------------*/
+/*	7. SAG
+/*-----------------------------------------------------------------------------------*/
+#block{margin-top:20px;padding-bottom:10px;width:330px;background:#FFF;box-shadow:0 0 1px #666;}
+#block .baslik{width:310px;height:18px;color:#FFF;background:#e74c3c;padding:10px}
+#block .baslik a{padding:11.5px 10px;margin-top:-10px;margin-right:-10px;background:#c0392b;color:#FFF;font-size:13px;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+#block .baslik a:hover{background:#842a21;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+ul.yanyana{margin-left:30px;margin-top:10px;}
+ul.yanyana li{list-style:square;color:#34495e;float:left;width:150px;line-height:23px}
+ul.yanyana li a{font-size:14px;color:#34495e;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+ul.yanyana li a:hover{color:#c0392b;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+ul.sosyal{margin-left:80px;margin-top:5px}
+#block i.fa{color:#34495e;font-size:30px;margin-left:10px;margin-top:10px;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+#block i.fa:hover{color:#e74c3c;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+#block .benitani{background:url(images/ben.jpg) no-repeat center;width:310px;height:100px;border-radius:2%;border:3px solid #34495e;margin:10px auto;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+#block .benitani:hover{border:3px solid #e74c3c;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+#block p{line-height:20px;font-size:13px;padding-left:10px;padding-right:10px;color:#34495e}
+#resimli-son-yorumlar{}
+#resimli-son-yorumlar li{padding:7px 0px 10px 10px;display:inline-block;width:120%;margin-left:10px;margin-top:5px;}
+#resimli-son-yorumlar img{border:3px solid #34495e;margin-left:-10px;-webkit-transition: all 1s ease;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;-ms-transition: all 0.5s ease;transition: all 0.5s ease;width:40px;height:40px;float:left;padding:-10px;margin:0px 6px -6px -10px;border-radius:2px}
+#resimli-son-yorumlar img:hover{border:3px solid #e74c3c;-webkit-transition: all 1s ease;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;-ms-transition: all 0.5s ease;transition: all 0.5s ease;}
+#resimli-son-yorumlar span.avatarlar{}
+#resimli-son-yorumlar span.yazar{color:#34495e;margin:4px 0px 2px 0px;display:inline-block;}
+#resimli-son-yorumlar span.icerik{color:#34495e;font-size:11px;}
+
+/*-----------------------------------------------------------------------------------*/
+/*	8. FOOTER
+/*-----------------------------------------------------------------------------------*/
+
+footer{height:130px;background:#34495e;width:100%;margin-top:-20px;}
+footer .logo{float:left;background:url(images/logo.png) no-repeat;height:44px;width:362px;margin-left:319px;margin-top:20px}
+footer p{font-size:15px;color:#FFF;text-align:center;padding-top:90px}
+
+/*-----------------------------------------------------------------------------------*/
+/*	9. YORUM ALANI
+/*-----------------------------------------------------------------------------------*/
+textarea#comment {-webkit-transition: all 1s ease;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;-ms-transition: all 0.5s ease;transition: all 0.5s ease; width: 590px; padding: 5px; height: 130px; border: 2px solid #95a5a6; background: #fff; color: #666; margin: 5px 0px;}     
+textarea#comment:focus{outline:none;-webkit-transition: all 1s ease;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;-ms-transition: all 0.5s ease;transition: all 0.5s ease;border:2px solid #1abc97;color:#393939;}
+.commentmetadata { font-size: 11px; }  
+#yorum {border-bottom:1px dotted #ddd;padding-bottom:10px;margin-left:10px;width: 620px;}
+.yorum-alt {width: 560px;margin-top:10px;font-size:12px}
+.yorum-yan {width: 400px;margin-left: 65px;}
+.yorum-yan a:hover{color:#1abc97;}
+.yorumUst{background:#ddd;width:460px;padding:3px;}
+.yorum-avatar img {-webkit-transition: all 1s ease;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;-ms-transition: all 0.5s ease;transition: all 0.5s ease;border:3px solid #95a5a6;float: left;border-radius:3px;}
+.yorum-avatar img:hover{border:3px solid #1abc97;-webkit-transition: all 1s ease;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;-ms-transition: all 0.5s ease;transition: all 0.5s ease;}
+#yorumtemp {line-height: 1.6;width: 620px;padding: 0;margin: 30px 0px 0px 0px;}
+.yorumlar {margin-left:-40px;width:600px;padding-bottom: 20px;list-style-type: none;}
+.yorumyap {width:590px;padding: 3px 12px 4px 10px;background: #FFF;}
+#submit {-webkit-transition: all 1s ease;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;-ms-transition: all 0.5s ease;transition: all 0.5s ease;outline:none;width:100px;height:30px;float:right;background: #fff;padding: 4px 6px;color: #000;margin: 5px -12px;font: 11px Tahoma;border: 2px solid #95a5a6;}
+#submit:hover{outline:none;-webkit-transition: all 1s ease;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;-ms-transition: all 0.5s ease;transition: all 0.5s ease;border:2px solid #16a085;background:#1abc97;color:#FFF;}
+#submit:focus{outline:none;-webkit-transition: all 1s ease;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;-ms-transition: all 0.5s ease;outline:none;transition: all 0.5s ease;border:2px solid #16a085;background:#1abc97;color:#FFF;}
+#author {width:300px;height:20px;-webkit-transition: all 1s ease;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;-ms-transition: all 0.5s ease;transition: all 0.5s ease;background: #fff;padding: 4px 6px;margin: 3px 0px;color: #000;font: 11px Tahoma;border: 2px solid #95a5a6;}
+#author:focus{-webkit-transition: all 1s ease;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;-ms-transition: all 0.5s ease;outline:none;transition: all 0.5s ease;border:2px solid #1abc97;background:#FFF;color:#393939;}
+#email {width:300px;height:20px;-webkit-transition: all 1s ease;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;-ms-transition: all 0.5s ease;transition: all 0.5s ease;background: #fff;padding: 4px 6px;margin: 3px 0px;color: #000;font: 11px Tahoma;border:2px solid #95a5a6;}
+#email:focus{-webkit-transition: all 1s ease;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;-ms-transition: all 0.5s ease;outline:none;transition: all 0.5s ease;border:2px solid #1abc97;background:#FFF;color:#393939;}
+#url {width:300px;height:20px;-webkit-transition: all 1s ease;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;-ms-transition: all 0.5s ease;transition: all 0.5s ease;background: #fff;padding: 4px 6px;margin: 3px 0px;color: #000;font: 11px Tahoma;border: 2px solid #95a5a6;}
+#url:focus{-webkit-transition: all 1s ease;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;-ms-transition: all 0.5s ease;outline:none;transition: all 0.5s ease;border:2px solid #1abc97;background:#FFF;color:#393939;}
+
+/*-----------------------------------------------------------------------------------*/
+/*	10. ILETISIM FORMU
+/*-----------------------------------------------------------------------------------*/
+
+.your-name input,.your-email input,.your-subject input,.wpcf7-url{float:left;outline:none;border:2px solid #95a5a6;width:150px;height:20px;margin-left:-20px;margin-right:20px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;color:#393939;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;-o-transition:all 1s ease;-ms-transition:all 1s ease;transition:all 1s ease;padding:5px}
+.wpcf7 textarea{float:left;outline:none;border:2px solid #95a5a6;width:150px;height:20px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;color:#393939;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;-o-transition:all 1s ease;-ms-transition:all 1s ease;transition:all 1s ease;padding:5px;width:600px;height:150px}
+.wpcf7-submit:hover{-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;border:2px solid #16a085;background:#1abc97;color:#FFF;}
+.wpcf7-submit{-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;outline:none;width:100px;height:30px;border:2px solid #95a5a6;background:#FFF;float:right;-moz-border-radius:3px;border-radius:3px;color:#95a5a6;font-size:15px;text-align:center;margin-top:10px;margin-right:105px;-webkit-transition:box-shadow .5s;-moz-transition:box-shadow .5s;-o-transition:box-shadow .5s;transition:box-shadow .5s;padding:5px}
+.your-name input:hover,.your-email input:hover,.your-subject input:hover,.wpcf7 textarea:hover,.wpcf7-url:hover{border:2px solid #1abc97}
+.wpcf7-select{-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;border:1px solid #ddd;width:300px;height:33px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;outline:none;-moz-box-shadow:0 0 3px rgba(0,0,0,0.1);-webkit-box-shadow:0 0 3px rgba(0,0,0,0.1);box-shadow:0 0 3px rgba(0,0,0,0.1);padding:6px}
+.wpcf7-select:hover{-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;border:1px solid #95a5a6}
+.your-name input:Focus,.your-email input:Focus,.your-subject input:Focus,.wpcf7 textarea:Focus,.wpcf7-url:focus,.wpcf7-select:focus{-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;border:2px solid #1abc97;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;-o-transition:all 1s ease;-ms-transition:all 1s ease;transition:all 1s ease}

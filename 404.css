@@ -1,0 +1,16 @@
+body{background:#e74c3c;font-family: 'Raleway', sans-serif;}
+#container{width:600px;margin:0 auto}
+img{margin-left:170px;margin-top:100px}
+h1{font-size:30px;color:#FFF;margin-top:30px;text-align:center}
+li{list-style:none;line-height:30px;font-size:15px;color:#FFF;text-align:center}
+h2{color:#FFF;font-size:15px;float:left;font-weight:400;width:300px;text-align:center}
+h3{color:#FFF;font-size:15px;float:right;font-weight:400;width:300px;text-align:center}
+
+.search{font-family: 'Raleway', sans-serif;margin-left:30px;float:left;padding:10px;height:21px;margin-top:10px;background:#e74c3c;border:2px solid #FFF;border-radius:2px;width:220px;outline:none;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+.search:focus{background:#c0392b;color:#FFF;padding-right:10px;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+a.buton{float:right;padding:10px 20px;margin-right:95px;margin-top:5px;border:2px solid #FFF;border-radius:2px;text-decoration:none;color:#FFF;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+a.buton:hover{background:#c0392b;-webkit-transition: .3s ease-in-out; -moz-transition: .3s ease-in-out; transition: .3s ease-in-out;}
+::-webkit-input-placeholder {color:#FFF;}
+:-moz-placeholder {color:#FFF;}
+::-moz-placeholder {color:#FFF;}
+:-ms-input-placeholder {color:#FFF;}
